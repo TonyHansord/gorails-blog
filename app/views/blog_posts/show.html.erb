@@ -1,0 +1,7 @@
+<div class="post">
+    <h2><%= @blog_post.title %></h2>
+    <p><%= @blog_post.content %></p>
+    <p><%= link_to "Back to blog", blog_posts_path %></p>
+    <p><%= link_to "Edit", edit_blog_post_path(@blog_post) %></p>
+</div>
+

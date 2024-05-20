@@ -1,0 +1,14 @@
+
+    <h1>My Blog</h1>
+
+        <div class="posts">
+      <% @blog_posts.each do |blog_post| %>
+    
+            <h2><%= blog_post.title %></h2>
+            <p><%= blog_post.content %></p>
+            <p><%= link_to "Read more", blog_post_path(blog_post) %></p>
+
+      <% end %>
+      </div>
+
+        <p><%= link_to "New Post", new_blog_post_path %></p>
